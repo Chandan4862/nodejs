@@ -1,11 +1,6 @@
-import express, { Express, Request, Response } from "express";
-const app: Express = express();
-const port = 3000;
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello worldl");
-});
-
-app.listen(port, () => {
-  console.log("Server listening at", port);
+import express from "express";
+const { setup, container } = require("./container");
+setup().then(() => {
+  const server = container.resolve("server");
+  server.start();
 });

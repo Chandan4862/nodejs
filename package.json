@@ -20,11 +20,19 @@
   },
   "homepage": "https://github.com/Chandan4862/nodejs#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "awilix": "^12.0.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.9.3",
+    "nodemon": "^3.1.7",
+    "sequelize-cli": "^6.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   }
